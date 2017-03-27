@@ -99,6 +99,12 @@
     padding: 4px 8px;
     line-height: 32px;
     white-space: nowrap;
+    transition: opacity .3s ease;
+}
+
+.yii-debug-toolbar_animating .yii-debug-toolbar__block:not(.yii-debug-toolbar__title):not(.yii_debug_toolbar__toggle),
+.yii-debug-toolbar:not(.yii-debug-toolbar_active) .yii-debug-toolbar__block:not(.yii-debug-toolbar__title):not(.yii-debug-toolbar__toggle) {
+    opacity: 0;
 }
 
 .yii-debug-toolbar__block_active,
